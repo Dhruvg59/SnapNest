@@ -10,7 +10,7 @@ SnapNest is a social media platform that allows users to register, log in, creat
   - Add posts to share with others.
   - View a feed of posts from other users.
 - **Feed Page**: A dedicated feed page allows users to view and interact with content from others.
-- **Social Login**: Users can also log in via Facebook or Google for a quick and easy sign-up experience.
+
   
 ## Technologies Used
 
