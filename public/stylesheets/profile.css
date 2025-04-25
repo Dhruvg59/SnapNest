@@ -1,0 +1,256 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .containerpers {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cardpers {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .username {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .tagline,
+  .description {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+
+   /* Reset & Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #9f9393;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 237, 237);
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #6a0dad;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.2s;
+  
+}
+.navbar a.button{
+  color: #f9f5fc;
+}
+
+.navbar a:hover {
+  color: #4b0082;
+}
+.navbar h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  
+}
+.main-content {
+  transform: scale(0.9);
+  transform-origin: top center;
+  padding-top: 20px; /* give space below navbar */
+}
+
+/* Profile Section */
+.containerpers {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.cardpers {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 28px;
+  margin: 0;
+}
+
+.username {
+  font-size: 18px;
+  color: #777;
+  margin: 5px 0 15px;
+}
+
+.tagline,
+.description {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6a0dad;
+  color: #ece7e7;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4b0082;
+}
+
+/* Upload form */
+form input,
+form button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #4b0082;
+}
+
+/* Feed Posts (Masonry style grid) */
+.container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 80px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.profile-picture {
+  position: relative;
+  width: 150px;
+  margin: auto;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(247, 5, 5);
+  border-radius: 50%;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(1,1,1,0.2);
+}
+

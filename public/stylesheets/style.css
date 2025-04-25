@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  
+}
+body {
+  background-color: rgb(122, 115, 115);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  overflow-y: auto;  
+  background-image: url("/images/more images/background image (SnapNest).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  background-color:white;
+  width: 460px;
+  max-height: 95vh;
+  margin: auto;
+  padding-bottom: 35px;
+  border-radius: 30px;
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(135, 138, 138, 0.5),
+    0 0 40px rgba(0, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+}
+.content {
+ 
+  width: 68%;
+  margin: auto;
+  text-align: center;
+}
+ 
+.img1{
+  width: 70px;
+  position: relative;
+  top: 14px;
+}
+.header {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: .9;
+}
+.detail {
+  width: 100%;
+  height: 38px;
+  margin: 5px;
+  padding: 15px;
+  font-size: 15px;
+  color: gray;
+  border: 2px solid rgb(218, 214, 214);
+  border-radius: 15px;
+}
+.detail:focus {
+  box-shadow: 0px -7px 3px -2px rgba(15, 91, 231, 0.4),
+    0px 7px 3px -2px rgba(15, 91, 231, 0.4),
+    7px 0px 3px -2px rgba(15, 91, 231, 0.4),
+    -7px 0px 3px -2px rgba(15, 91, 231, 0.4);
+  outline: none;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 800;
+  position: relative;
+  left: -60px;
+  margin: 5px;
+}
+
+.btn {
+  width: 100%;
+  height: 30px;
+  border: hidden;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 3px 0px;
+}
+
+.int {
+  background-color: purple;
+  margin: 10px 0px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.int:hover{
+  background-color:rgba(122, 65, 122, 0.998);
+}
+
+.or {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 5px 0px;
+}
+
+.fbk {
+  background-color: rgb(9, 128, 240);
+  margin: 5px 0px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.fbk a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.fbk:hover{
+  background-color: rgb(8, 110, 206);
+}
+.ggl{
+  text-align: center;
+  background-color: #ccc;
+}
+.ggl a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.ggl:hover{
+  background-color: #a0a0a0;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 10px;
+  opacity: 0.7;
+}
+p:last-child {
+  opacity: 1;
+}
+hr {
+  width: 50%;
+  opacity: 0.4;
+  margin-left: 25%;
+}
+.error{
+  font-size: large;
+  font-weight: 500;
+  color: red;
+  text-transform:capitalize;
+  margin: 7px 0;
+}

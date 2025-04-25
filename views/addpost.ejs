@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Post</title>
+  <link rel="stylesheet" href="/stylesheets/profile.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div><h3 class="logo">SnapNest</h3></div>
+    <div>
+    <a href="/profile">Profile</a>
+    <a href="/feed">Feed</a>
+    <a href="/logout" class="button">Logout</a>
+</div>
+  </div>
+
+  <div class="containerpers">
+    <div class="cardpers">
+      <h2>Add a New Post</h2>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text" name="filecaption" placeholder="Image caption" required />
+        <input type="file" name="file" required />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
